@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Biology</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Merriweather+Sans|Pacifico&display=swap" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img
+                src="{% static 'svg/bee.svg' %}"
+                width="50"
+                height="50"
+        > Biology
+        <a href="/about">
+            About
+        </a>
+        <a href="/register">
+            Register
+        </a>
+    </header>
+    {% block content %}
+        <div class="card">
+            <ul>
+                {% for question in questions %}
+                    <li>{{ question.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endblock %}
+
+
+</body>
+</html>
