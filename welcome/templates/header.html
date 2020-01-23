@@ -1,0 +1,29 @@
+{% load static %}
+
+<header class="header">
+    <img
+            src="{% static 'svg/bee.svg' %}"
+            width="50"
+            height="50"
+    > Biology
+
+    <a href="/about">
+        About
+    </a>
+
+    {% if user.is_authenticated %}
+        <span>
+            Hello, {{ user }}!
+        </span>
+        <a href="/logout">
+            Logout
+        </a>
+    {% else %}
+        <a href="/register">
+            Register
+        </a>
+        <a href="/login">
+            Login
+        </a>
+    {% endif %}
+</header>

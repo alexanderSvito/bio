@@ -1,5 +1,8 @@
 import datetime
 
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponse
+
 from questions.models import Question
 from django.shortcuts import render
 
@@ -14,6 +17,11 @@ def main_view(request):
                 "questions": Question.objects.all()
             }
         )
+
+
+@login_required(login_url='/login')
+def q_view(request):
+    return HttpResponse("This is only for authorized users")
 
 
 def about_view(request):

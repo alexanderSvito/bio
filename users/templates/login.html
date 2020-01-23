@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="card form" style="width: 40%;">
+        Please enter your email and password!
+        {% if error %}
+            <span style="color: red;">Password or username is incorrect!</span>
+        {% endif %}
+        <form action="/login" method="post">
+            {% csrf_token %}
+            <input name="username" type="text" placeholder="username">
+            <input name="password" type="password" placeholder="password">
+            <input class="submit-btn" type="submit">
+        </form>
+
+    </div>
+
+{% endblock %}

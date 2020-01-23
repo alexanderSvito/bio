@@ -10,29 +10,18 @@
     <link href="{% static 'css/main.css' %}" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img
-                src="{% static 'svg/bee.svg' %}"
-                width="50"
-                height="50"
-        > Biology
-        <a href="/about">
-            About
-        </a>
-        <a href="/register">
-            Register
-        </a>
-    </header>
-    {% block content %}
-        <div class="card">
-            <ul>
-                {% for question in questions %}
-                    <li>{{ question.text }}</li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% endblock %}
-
+    {% include 'header.html' with user=user %}
+    <div id="app">
+        {% block content %}
+            <div class="card">
+                <ul>
+                    {% for question in questions %}
+                        <li>{{ question.text }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endblock %}
+    </div>
 
 </body>
 </html>

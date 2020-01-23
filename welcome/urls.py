@@ -4,5 +4,6 @@ from welcome import views
 
 urlpatterns = [
     path('', views.main_view),
-    path('about', views.about_view)
+    path('about', views.about_view),
+    path('q', views.q_view)
 ]
