@@ -28,7 +28,8 @@ SECRET_KEY = 'k^2az_9humwy3f=dfqp262agfl-&l$##gmt6ukrm9pukr6iyie'
 DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
-
+SCHEMA = 'http'
+HOST_NAME = f'{SCHEMA}://127.0.0.1:8000/'
 
 # Application definition
 
@@ -133,3 +134,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
 ]
+
+MEDIA_ROOT = 'data/img'
+MEDIA_URL = '/media/'

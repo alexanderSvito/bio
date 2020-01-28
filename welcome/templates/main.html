@@ -14,11 +14,9 @@
     <div id="app">
         {% block content %}
             <div class="card">
-                <ul>
-                    {% for question in questions %}
-                        <li>{{ question.text }}</li>
-                    {% endfor %}
-                </ul>
+                <form method="post" action="test/start">
+                    <input class="start-btn" type="submit">
+                </form>
             </div>
         {% endblock %}
     </div>

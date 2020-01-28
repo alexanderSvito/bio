@@ -6,11 +6,11 @@ class RegistrationForm(forms.ModelForm):
     class Meta:
         model = get_user_model()
         fields = [
+            'first_name',
+            'last_name',
             'username',
             'email',
             'password',
-            'first_name',
-            'last_name'
         ]
         widgets = {
             'password': forms.PasswordInput(),

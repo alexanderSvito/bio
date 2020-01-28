@@ -19,11 +19,6 @@ def main_view(request):
         )
 
 
-@login_required(login_url='/login')
-def q_view(request):
-    return HttpResponse("This is only for authorized users")
-
-
 def about_view(request):
     if request.method == 'GET':
         return render(

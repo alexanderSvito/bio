@@ -8,14 +8,36 @@ body {
   justify-content: space-around;
 
   background: linear-gradient(45deg, #00b09b, #96c93d);
-  height: 70px;
+  height: 50px;
   box-shadow: grey 0px 1px 5px;
 
 
   color: white;
-  font-size: 35px;
+  font-size: 16px;
   font-family: 'Pacifico', cursive;
   padding: 1em;
+}
+
+.header a {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+}
+.header a:visited {
+    color: white;
+}
+
+.header span {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 21px;
 }
 
 
@@ -64,7 +86,7 @@ body {
 
   line-height: 1.5em;
 
-  border: lighgray 1px solid;
+  border: rgb(232, 240, 254) 1px solid;
   box-shadow: gray 3px 3px 5px;
 
   font-size: 28px;
@@ -119,7 +141,19 @@ input.submit-btn {
     width: 100%;
     margin: 20px 0 0 0;
     border-radius: 0 0 10px 10px;
+}
 
+input.start-btn {
+    background: linear-gradient(45deg, #00b09b, #96c93d);
+    border: none;
+    color: white;
+    font-size: 25px;
+
+    cursor: pointer;
+
+    padding: 20px 0 20px 0;
+    width: 300px;
+    margin: 20px 40px;
 }
 
 .helptext {
@@ -165,4 +199,10 @@ a {
 
 a:visited {
     text-decoration: none;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 300px;
 }
