@@ -1,0 +1,35 @@
+{
+  "#id": 1758,
+  "question": "Определите количество аминокислотных остатков в составе представленного пептида:",
+  "options": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "correct": 3,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "chemistry"
+  ],
+  "attachments": {
+    "question": [
+      "2808.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

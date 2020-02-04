@@ -1,0 +1,36 @@
+{
+  "#id": 1755,
+  "question": "На схеме развития мужских половых клеток млекопитающих сперматида обозначена цифрой:",
+  "options": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      "4."
+    ]
+  ],
+  "correct": 4,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "mitosis",
+    "cytology"
+  ],
+  "attachments": {
+    "question": [
+      "2807.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

@@ -1,0 +1,12 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="card">
+    <ul>
+        {% for q in object_list %}
+        <li>{{ q.text }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

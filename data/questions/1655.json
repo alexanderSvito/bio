@@ -1,0 +1,34 @@
+{
+  "#id": 1655,
+  "question": "Потомство F1будет единообразным по фенотипу при скрещивании организмов с генотипами:",
+  "options": [
+    [
+      1,
+      "Ммиmm"
+    ],
+    [
+      2,
+      "MmиМm"
+    ],
+    [
+      3,
+      "MMиmm"
+    ],
+    [
+      4,
+      "MmNnиmmnn"
+    ]
+  ],
+  "correct": 3,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "evolution",
+    "mutability"
+  ],
+  "attachments": {
+    "question": [],
+    "answer": []
+  },
+  "type": "test"
+}

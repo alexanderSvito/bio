@@ -1,0 +1,36 @@
+{
+  "#id": 1705,
+  "question": "Какая стадия эмбрионального развития ланцетника изображена на рисунке?",
+  "options": [
+    [
+      1,
+      "морула"
+    ],
+    [
+      2,
+      "гаструла"
+    ],
+    [
+      3,
+      "нейрула"
+    ],
+    [
+      4,
+      "бластула."
+    ]
+  ],
+  "correct": 2,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "mitosis",
+    "ontogenesis"
+  ],
+  "attachments": {
+    "question": [
+      "2798.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

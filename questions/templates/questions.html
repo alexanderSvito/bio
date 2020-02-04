@@ -1,0 +1,26 @@
+
+{% extends 'main.html' %}
+
+{% block content %}
+<div class="card">
+    <ul>
+    {% for q in questions.object_list %}
+        <li>{{ q.text }}</li>
+    {% endfor %}
+    </ul>
+
+    <div style="display: flex; justify-content: space-around;">
+        {% if questions.has_previous %}
+        <a href="?page={{ questions.previous_page_number }}">
+            {{ questions.previous_page_number }}
+        </a>
+        {% endif %}
+        <span>{{ page }}</span>
+        {% if questions.has_next %}
+            <a href="?page={{ questions.next_page_number }}">
+                {{ questions.next_page_number }}
+            </a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

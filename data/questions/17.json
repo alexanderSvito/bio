@@ -1,0 +1,35 @@
+{
+  "#id": 17,
+  "question": "Бледная поганка изображена на рисунке:",
+  "options": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "correct": 1,
+  "is_test": true,
+  "explaining": "Бледная поганка изображена на рисунке: 1",
+  "categories": [
+    "chemistry"
+  ],
+  "attachments": {
+    "question": [
+      "43.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

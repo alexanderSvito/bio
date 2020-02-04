@@ -1,0 +1,34 @@
+{
+  "#id": 2,
+  "question": "Белки — это полимеры, мономерами которых является(-ются):",
+  "options": [
+    [
+      1,
+      "глюкоза"
+    ],
+    [
+      2,
+      "нуклеотиды"
+    ],
+    [
+      3,
+      "фосфолипиды"
+    ],
+    [
+      4,
+      "аминокислоты"
+    ]
+  ],
+  "correct": 4,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "cytology",
+    "chemistry"
+  ],
+  "attachments": {
+    "question": [],
+    "answer": []
+  },
+  "type": "test"
+}

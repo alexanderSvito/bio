@@ -1,0 +1,35 @@
+{
+  "#id": 1802,
+  "question": "Одноклеточный организм изображен на рисунке:",
+  "options": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      "4."
+    ]
+  ],
+  "correct": 2,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "mutability"
+  ],
+  "attachments": {
+    "question": [
+      "2818.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

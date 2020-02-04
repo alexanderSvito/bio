@@ -53,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'bio.middleware.LastQuestion'
 ]
 
 ROOT_URLCONF = 'bio.urls'
@@ -137,3 +138,5 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = 'data/img'
 MEDIA_URL = '/media/'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True

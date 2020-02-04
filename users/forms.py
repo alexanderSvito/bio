@@ -16,3 +16,7 @@ class RegistrationForm(forms.ModelForm):
             'password': forms.PasswordInput(),
         }
 
+    def save(self, commit=True):
+        user = super().save(commit=False)
+        user.set_password(user.password)
+        user.save()

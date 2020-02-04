@@ -41,6 +41,14 @@ body {
 }
 
 
+.question {
+    padding: 20px;
+}
+
+.question-image {
+    display: block;
+}
+
 
 #app {
   display: flex;
@@ -203,6 +211,15 @@ a:visited {
 
 .test {
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin: 30px 300px;
+}
+
+h4 {
+    margin: 0;
+}
+
+label {
+    cursor: pointer;
 }

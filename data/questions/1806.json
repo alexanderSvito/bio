@@ -1,0 +1,35 @@
+{
+  "#id": 1806,
+  "question": "Какая фаза мейоза изображена на рисунке?",
+  "options": [
+    [
+      1,
+      "анафаза I"
+    ],
+    [
+      2,
+      "анафаза II"
+    ],
+    [
+      3,
+      "метафаза I"
+    ],
+    [
+      4,
+      "метафаза II."
+    ]
+  ],
+  "correct": "1) анафаза I;",
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "mitosis"
+  ],
+  "attachments": {
+    "question": [
+      "2819.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

@@ -1,0 +1,35 @@
+{
+  "#id": 1732,
+  "question": "На схеме строения зуба человека дентин обозначен цифрой:",
+  "options": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      "4."
+    ]
+  ],
+  "correct": 2,
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "cytology"
+  ],
+  "attachments": {
+    "question": [
+      "2802.png"
+    ],
+    "answer": []
+  },
+  "type": "test"
+}

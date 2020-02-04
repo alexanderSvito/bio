@@ -1,0 +1,37 @@
+{
+  "#id": 1857,
+  "question": "К Моховидным относится",
+  "options": [
+    [
+      1,
+      "Хлорелла"
+    ],
+    [
+      2,
+      "Сфагнум"
+    ],
+    [
+      3,
+      "Орляк"
+    ],
+    [
+      4,
+      "Фукус"
+    ],
+    [
+      5,
+      "Улотрикс"
+    ]
+  ],
+  "correct": "2) Сфагнум",
+  "is_test": true,
+  "explaining": "",
+  "categories": [
+    "zoology"
+  ],
+  "attachments": {
+    "question": [],
+    "answer": []
+  },
+  "type": "test"
+}
