@@ -1,5 +1,11 @@
 <template>
-  <div class="card">
+  <div :class="[{'loading': loading}, 'card']">
+    <v-progress-linear
+      v-if="loading"
+      indeterminate
+      style="margin-top: -2px;"
+      color="primary"
+    ></v-progress-linear>
     <slot></slot>
   </div>
 </template>
@@ -7,21 +13,27 @@
 <script>
 export default {
   name: 'Card',
+  props: {
+    loading: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .card {
     background: white;
     margin: 30px;
-    border-radius: 10px;
 
-    line-height: 1.5em;
+    border-top: black 2px solid;
 
-    border: rgb(232, 240, 254) 1px solid;
-    box-shadow: gray 3px 3px 5px;
+    font-size: 16px;
+    font-family: 'Lato';
 
-    font-size: 28px;
-    font-family: 'Alegreya', serif;
+    &.loading {
+      border-top: 0;
+    }
   }
 </style>

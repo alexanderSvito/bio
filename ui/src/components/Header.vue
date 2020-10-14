@@ -1,10 +1,11 @@
 <template>
   <header>
     <div class="logo">
-      <img src="../assets/bee.svg" height="50" width="50">
-      <span>Биология Тесты</span>
+      <router-link :to="{ name: 'Main', params: {} }">
+        <img src="../assets/logo.svg" height="50">
+      </router-link>
     </div>
-    <router-link :to="{ name: 'Register', params: {} }">Зарегистрироваться</router-link>
+    <router-link :to="{ name: 'Register', params: {} }">Register</router-link>
 
   </header>
 </template>
@@ -24,21 +25,21 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang='scss'>
 header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
 
-  background: linear-gradient(45deg, #00b09b, #96c93d);
+  border-bottom: 2px solid black;
+
+  background: white;
   height: 90px;
-  box-shadow: grey 0px 1px 5px;
 
-
-  color: white;
+  color: black;
   font-size: 16px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto';
   padding: 1em;
 }
 
@@ -53,13 +54,47 @@ header {
   top: 20px;
 }
 
-.logo:hover {
+.logo img:hover {
   cursor: pointer;
+  fill: #0330fc;
 }
 
-a {
-  font-family: 'Merriweather Sans', sans-serif;
+header a {
+  font-family: 'Roboto';
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 24px;
+  transition: all 0.1s ease-in-out;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    transition: all 0.1s ease-in-out;
+    height: 5px;
+    margin: 5px 0 0;
+    opacity: 0;
+    background-color: #0330fc;
+  }
+
+  &:before {
+    left: 50%;
+  }
+  &:after {
+    right: 50%;
+  }
 }
+
+a:hover {
+  color: #0330fc;
+  &:before,
+  &:after {
+    width: 52%;
+    opacity: 1;
+  }
+}
+
 </style>
